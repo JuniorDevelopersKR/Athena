@@ -1,0 +1,9 @@
+.Chat--Button {
+  bottom: 0;
+  position: absolute;
+  margin-bottom: 80px;
+  margin-left: 5px;
+  width: 100%;
+  word-break: keep-all;
+  word-wrap: break-word;
+}

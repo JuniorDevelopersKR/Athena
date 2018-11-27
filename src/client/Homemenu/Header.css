@@ -1,0 +1,42 @@
+.header {
+  background: rgb(0, 0, 0);
+  height: 60px;
+  width: 100%;
+}
+
+.logo1 {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  left: calc(40%);
+  float: left;
+}
+.logo2 {
+  width: 180px;
+  height: 40px;
+  position: relative;
+  left: calc(40%);
+  top: 8px;
+  vertical-align: center;
+  float: left;
+}
+.item {
+  text-align: center;
+  width: 100px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 5rm;
+  display: table-cell;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  float: left;
+  margin-top: 4px;
+  background: rgb(17, 17, 17);
+}
+.loginbutton {
+  float: right;
+}
+.item:hover {
+  background: rgb(17, 17, 17);
+}

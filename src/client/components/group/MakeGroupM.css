@@ -1,0 +1,67 @@
+.Group--Button button {
+  display: block;
+  margin: 3px 3.5px;
+  width: 19px;
+  height: 19px;
+  line-height: 5px;
+  border: 0.5px solid #464646;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  background: #464646;
+  box-shadow: 0 0 3px gray;
+  font-size: 15px;
+  font-weight: bold;
+  color: azure;
+  float: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.add {
+  position: relative;
+  top: -8.5px;
+  left: -1.5px;
+}
+.Group--Button button:hover {
+  background: rgb(32, 32, 32);
+  color: white;
+}
+
+.image {
+  position: relative;
+  left: -0.5px;
+}
+
+.Group--Button button:before,
+.Group--Button button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: rgb(36, 56, 172);
+  transition: 400ms ease all;
+}
+
+.Group--Button button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+.Group--Button button:hover:before,
+.Group--Button button:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+.Modal--Div {
+  width: 400px;
+  font-size: 12px;
+}
+.Modal--Input {
+  width: 400px;
+  font-size: 12px;
+}

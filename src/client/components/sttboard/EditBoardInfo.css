@@ -1,0 +1,26 @@
+.fix--text {
+  width: 70%;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+.playbutton {
+  margin: 5px 5px;
+  width: 18px;
+  height: 16px;
+  border: 0.5px solid #464646;
+  text-align: center;
+  text-decoration: none;
+  background: #7c7c7c;
+  box-shadow: 0 0 3px gray;
+  font-size: 10px;
+  font-weight: bold;
+  color: azure;
+}
+
+.font {
+  position: relative;
+  color: black;
+  top: -1.5px;
+  right: 1.5px;
+}

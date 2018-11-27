@@ -1,12 +1,12 @@
 {
   "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
-    "jsRules": {
-"no-console": false
-    },
-    "rules": {
-        "no-console": false
-    },
-    "rulesDirectory": [],
+  "jsRules": {
+    "no-console": false
+  },
+  "rules": {
+    "no-console": false
+  },
+  "rulesDirectory": [],
   "linterOptions": {
     "exclude": [
       "config/**/*.js",

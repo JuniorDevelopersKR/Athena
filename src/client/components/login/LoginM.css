@@ -1,0 +1,71 @@
+body {
+    font-size: 62.5%;
+}
+
+.Login button{
+    background:rgb(36, 56, 172);
+    color:#fff;
+    border:none;
+    position:relative;
+    height:30px;
+    font-size:1.6em;
+    padding:0em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+    width: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .Login button:hover{
+    background:#fff;
+    color:rgb(36, 56, 172);
+  }
+
+.Login button:before,
+.Login button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: rgb(36, 56, 172);
+  transition:400ms ease all;
+}
+
+.Login button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+
+.Login button:hover:before,
+.Login button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.Login {
+  position: absolute;
+  right: 0;
+  height: auto;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+
+.facebook-modal {
+  height: 150px;
+}
+
+.Modal {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  background-color: papayawhip;
+}

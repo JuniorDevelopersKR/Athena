@@ -1,0 +1,12 @@
+.center {
+  position: absolute;
+  margin-bottom: 80px;
+  margin-left: 5px;
+  width: 70%;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+.button1 {
+  margin: 8px;
+}

@@ -1,0 +1,12 @@
+.CateGory ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.CateGory ul a {
+  text-decoration: none;
+  color: white;
+}
+#font {
+  color: white;
+}

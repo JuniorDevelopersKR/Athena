@@ -1,0 +1,11 @@
+.center-block {
+  color: white;
+  width: 70%;
+  border: 1px black solid;
+  display: block;
+  left: 15%;
+  position: relative;
+  float: center;
+  font-size: 20px;
+  /* align-content: center; */
+}

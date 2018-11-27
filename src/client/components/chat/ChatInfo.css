@@ -1,0 +1,28 @@
+.owner {
+  margin-right: 15px;
+  float: right;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.people {
+  margin-left: 10px;
+  float: left;
+  color: white;
+}
+
+/* .Message—Text {
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+.Message—Weather {
+  font-size: 10px;
+  margin: 0 5px;
+}
+
+.Message—Name {
+  font-size: 15px;
+  margin: 0 5px;
+} */

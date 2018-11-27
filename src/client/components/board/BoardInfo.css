@@ -1,0 +1,45 @@
+.Board--List {
+  border: 1px solid black;
+  margin: 9px;
+  padding: 9px;
+  display: inline-block;
+  width: 90%;
+  align-content: center;
+}
+#inline {
+  float: left;
+  position: relative;
+  bottom: -7px;
+}
+.Board--List button {
+  padding: 0;
+  /* border-right: 10px; */
+  background: none;
+  width: auto;
+  color: white;
+  float: left;
+}
+.ModalCss {
+  color: rgb(87, 87, 179);
+  border: 10px solid black;
+}
+#FloatRight {
+  float: right;
+  position: relative;
+  top: -1px;
+}
+.Modal--Div {
+  width: 400px;
+  font-size: 30px;
+}
+.Modal--Content {
+  width: 400px;
+  border: 0.3px solid black;
+  font-size: 20px;
+  height: 500px;
+}
+.Modal--FileName {
+  float: bottom;
+  position: relative;
+  bottom: -440px;
+}

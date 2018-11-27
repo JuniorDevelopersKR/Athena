@@ -1,0 +1,52 @@
+.myname button {
+  margin: 5px 5px;
+  margin-bottom: 5px;
+  width: 40px;
+  height: 40px;
+  line-height: 35px;
+  border: 0.5px solid #464646;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  background: #464646;
+  box-shadow: 0 0 3px gray;
+  font-size: 9px;
+  font-weight: bold;
+  color: azure;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#test1 {
+  float: right;
+}
+
+.myname button:hover {
+  background: rgb(32, 32, 32);
+  color: white;
+}
+
+.myname button:before,
+.myname button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: rgb(36, 56, 172);
+  transition: 400ms ease all;
+}
+
+.myname button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+.myname button:hover:before,
+.myname button:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}

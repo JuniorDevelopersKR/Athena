@@ -1,0 +1,13 @@
+.Modal--Div {
+  width: 400px;
+  font-size: 20px;
+}
+.Modal--Input {
+  width: 400px;
+  font-size: 20px;
+}
+.Float--Right {
+  float: right;
+  position: relative;
+  top: -35px;
+}

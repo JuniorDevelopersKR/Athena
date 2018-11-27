@@ -11,9 +11,9 @@ So I make a Lecture sharing platform. this project's name is 'Athena'. Athena is
 ...
 
 ## Screenshots
-Include logo/demo screenshots.
+Include logo/demo screenshots~~.
 
-## Tech/framework used
+## Tech/framework used/
 
 <b>Built with</b>
 - [Node.js](https://nodejs.org/en/)
@@ -27,16 +27,16 @@ Include logo/demo screenshots.
 
 ```
 # Clone the repository
-git clone https://github.com/JuniorDevelopersKR/Athena.git
+git clone https://gitlab.com/zeronetwo/athena.git
 
 # Go inside the directory
-cd Athena
+cd athena
 
 # Install dependencies
-yarn (or npm install)
+yarn (or npm install, npm i)
 
 # Start development server
-yarn dev (or npm run client)
+yarn dev (or npm run dev)
 
 # Build for production
 yarn build (or npm run build)

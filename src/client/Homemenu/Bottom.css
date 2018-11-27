@@ -1,0 +1,15 @@
+.Bottom {
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  align-content: center;
+  justify-content: center;
+  height: 15px;
+}
+
+.tag {
+  color: rgb(182, 182, 182);
+  margin-top: 2px;
+}

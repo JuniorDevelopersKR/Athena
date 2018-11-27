@@ -1,39 +1,37 @@
-const express = require('express')
-const group = require('../db/group')()
-const board = require('../db/board')()
+const express = require("express")
+const router = express.Router()
 
-const router = express.Router();
+const boardRouter = require("./board")
+const sttRouter = require("./stt")
 
-router.post('', function(req, res) {
-  console.log(`group : ${req.body}`);
-  group.make(req.body, function(err, result) {
-    group.show(result.insertId, function(showErr, data) {
-      res.status(201).json(data[0]);
-    })
-  });
-})
+const group = require("../controller/groupController")
+const groupManage = require("../controller/groupManageController")
 
-router.get('', function(req, res) {
-  group.findAll(function(err, result) {
-    res.status(200).json({ groups: result });
-  });
-})
+router.get("", group.showGroupOfUser)
+router.post("", group.make)
+router.get("/all", group.showAll)
+router.get("/:groupId/users", group.findUsers)
 
-router.post('/:groupId/boards', function(req, res) {
-  console.log(`board : ${req.body}`);
-  console.log(req.params.groupId);
-  board.write(req.body, req.params.groupId, function(err, result) {
-    board.show(result.insertId, function(showErr, data) {
-      res.status(201).json(data[0]);
-    })
-  });
-})
+router.put("/:groupId", groupManage.editDescription)
+router.delete('/:groupId/users/:userId', groupManage.expelUser)
+router.post('/:groupId/apply', groupManage.applyGroup)
+router.get("/:groupId/apply", groupManage.showUsersApplied)
+router.put("/:groupId/accept/:id/users/:userId", groupManage.acceptUser)
 
-router.get('/:groupId/boards', function(req, res) {
-  console.log(req.params.groupId);
-  board.findByGroupId(req.params.groupId, function(err, data) {
-  res.status(200).json({ boards: data });
-  })
-})
+router.use("/:groupId/stt",
+  function(req, res, next) {
+    req.groupId = req.params.groupId
+    next()
+  },
+  sttRouter
+)
 
-module.exports = router;
+router.use("/:groupId/boards",
+  function(req, res, next) {
+    req.groupId = req.params.groupId
+    next()
+  },
+  boardRouter
+)
+
+module.exports = router

@@ -1,0 +1,44 @@
+.Group--List a {
+  width: 70px;
+  background-color: transparent;
+  opacity: 0.5;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+  margin-left: -2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.Group--List button:hover {
+  background: rgb(32, 32, 32);
+  color: white;
+}
+
+.Group--List button:before,
+.Group--List button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: rgb(36, 56, 172);
+  transition: 400ms ease all;
+}
+
+.Group--List button:after {
+  left: inherit;
+  top: inherit;
+  right: 0;
+  bottom: 0;
+}
+
+.Group--List button:hover:before,
+.Group--List button:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}

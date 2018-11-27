@@ -1,0 +1,48 @@
+.Group--Info button {
+  margin: 5px 5px;
+  width: 40px;
+  height: 40px;
+  line-height: 35px;
+  border: 0.5px solid #464646;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  background: #464646;
+  box-shadow: 0 0 3px gray;
+  font-size: 10px;
+  font-weight: bold;
+  color: azure;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.Group--Info button:hover {
+  background: rgb(32, 32, 32);
+  color: white;
+}
+
+.Group--Info button:before,
+.Group--Info button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: rgb(36, 56, 172);
+  transition: 400ms ease all;
+}
+
+.Group--Info button:after {
+  left: inherit;
+  top: inherit;
+  right: 0;
+  bottom: 0;
+}
+
+.Group--Info button:hover:before,
+.Group--Info button:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}

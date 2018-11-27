@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -21,25 +25,105 @@
 .App-intro {
   font-size: large;
 }
-.Main-root1{
-        width: 10%;
-        float: left;
-        box-sizing: border-box;
-        background: #0ff;
+
+.Main-root1 {
+  float: left;
+  box-sizing: border-box;
+  background: rgb(52, 52, 52);
+  width: calc(55px);
+  height: 100vh;
+  overflow: scroll;
+  float: left;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8) inset,
+    0px 0px 5px rgba(200, 200, 200, 0.5);
 }
-.Main-root2{
-        width: 20%;
-        float: left;
-        box-sizing: border-box;
-        background: #ff0;
+
+.Main-root1::-webkit-scrollbar {
+  width: 0.2em;
+  background: transparent;
 }
-.Main-root3{
-        width: 70%;
-        float: left;
-        box-sizing: border-box;
-        background: #f0f;
+
+.Main-root1::-webkit-scrollbar-thumb {
+  background: #d3cece;
 }
+
+.Main-root1 a {
+  text-decoration: none;
+  color: black;
+}
+
+.Main-root2 {
+  width: calc(120px);
+  height: 100vh;
+  float: left;
+  box-sizing: border-box;
+  background: rgb(26, 26, 26);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8) inset,
+    0px 0px 5px rgba(200, 200, 200, 0.5);
+  overflow: scroll;
+}
+
+.Main-root2::-webkit-scrollbar {
+  width: 0.2em;
+  background: transparent;
+}
+
+.Main-root2::-webkit-scrollbar-thumb {
+  background: #d3cece;
+}
+
+.Main-root3 {
+  width: calc(100% - 175px);
+  overflow: hidden;
+  height: 100vh;
+  float: right;
+  float: left;
+  box-sizing: border-box;
+  background: rgb(51, 51, 51);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8) inset,
+    0px 0px 5px rgba(200, 200, 200, 0.5);
+  padding-top: 10px;
+  overflow: scroll;
+}
+
+.Main-root3::-webkit-scrollbar {
+  width: 0.2em;
+  background: transparent;
+}
+
+.Main-root3::-webkit-scrollbar-thumb {
+  background: #d3cece;
+}
+
+.LoginButton {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 7px;
+}
+
+#timeline {
+  width: 400px;
+  height: 20px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#handle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-top: 1px;
+  background: rgba(0, 0, 0, 1);
+}
+.logo {
+  height: calc(100%-75px);
+}
+
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
